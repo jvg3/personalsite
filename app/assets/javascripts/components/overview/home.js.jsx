@@ -1,6 +1,6 @@
 var Overview = Overview || {}
 
-Overview.Index = class Index extends React.Component {
+Overview.Home = class Home extends React.Component {
 
     constructor() {
         super()
@@ -24,7 +24,7 @@ Overview.Index = class Index extends React.Component {
                 </div>
                 <div className={"info-card " + (item || "closed")}>
                     <div className="info-header fx-row fx-hsb">
-                        <div>{this.headerForItem(item)}</div>
+                        <div>{this.headerForItem()}</div>
                         <div
                             className="info-close"
                             onClick={() => this.updateCard(null)}>
@@ -41,14 +41,17 @@ Overview.Index = class Index extends React.Component {
         this.setState({item: item})
     }
 
-    headerForItem(item) {
+    headerForItem() {
+
+        var item = this.state.item || ''
+
         switch(item) {
-            case "cloud": return "CLOUD/HOSTING"
-            case "server": return "SERVER-SIDE/API DEVELOPMENT"
-            case "desktop": return "FRONT-END WEB DEVELOPMENT"
-            case "mobile": return "NATIVE MOBILE IOS + ANDROID"
+            case 'cloud': return 'CLOUD/HOSTING'
+            case 'server': return 'SERVER-SIDE/API DEVELOPMENT'
+            case 'desktop': return 'FRONT-END WEB DEVELOPMENT'
+            case 'mobile': return 'NATIVE MOBILE IOS + ANDROID'
         }
-        return item ? item.upcase() : ""
+        return item.upcase()
     }
 
 

@@ -23,7 +23,7 @@ Nav = class Nav extends React.Component {
                         name="Home"
                     />
                     <Nav.Option
-                        name="Bio"
+                        name="About"
                     />
                     <Nav.Option
                         name="Projects"
@@ -72,7 +72,7 @@ Nav.Option = class Option extends React.Component {
                     updateMenu(menuStyle)
                     toggleMenu(!!menuStyle)
                 }}>
-                <a href={"/" + name}>{name.upcase()}</a>
+                <a href={"/" + name.downcase()}>{name.upcase()}</a>
             </div>
         )
     }

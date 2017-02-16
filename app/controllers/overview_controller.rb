@@ -1,7 +1,9 @@
 class OverviewController < ApplicationController
 
+  def home
+  end
 
-  def index
+  def about
   end
 
 end
