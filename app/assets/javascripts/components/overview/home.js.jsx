@@ -10,12 +10,13 @@ Overview.Home = class Home extends React.Component {
     render() {
 
         var item = this.state.item || null
+        var icons = ['cloud', 'database', 'server', 'desktop', 'mobile']
 
         return (
-            <div className="overview section fx-column">
+            <div className="home section fx-column">
                 <div className="header">FULL. STACK.</div>
                 <div className="icons fx-row">
-                    {['cloud', 'database', 'server', 'desktop', 'mobile'].map((icon) =>
+                    {icons.map((icon) =>
                         (<div
                             onMouseEnter={() => this.updateCard(icon)}
                             className={"icon fx-1 fa fa-" + icon}>
