@@ -1,0 +1,15 @@
+.footer {
+
+    .footer-option {
+        cursor: pointer;
+        background-color: $purple;
+        color: $cream;
+        padding: 15px 20px;
+        margin: 0 10px;
+        border: 2px solid $cream;
+        .fa {
+            margin-left: 5px;
+        }
+    }
+
+}

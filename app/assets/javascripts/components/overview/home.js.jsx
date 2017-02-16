@@ -33,6 +33,7 @@ Overview.Home = class Home extends React.Component {
                     </div>
                     <div className="info-content">{ipsum()}</div>
                 </div>
+                <Footer resume_path={this.props.resume_path} />
             </div>
         )
     }

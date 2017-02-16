@@ -20,6 +20,7 @@ Overview.About = class About extends React.Component {
                         <div className="content">{ipsum()}</div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
