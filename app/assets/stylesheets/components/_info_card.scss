@@ -1,0 +1,28 @@
+.info-card {
+
+    opacity: .95;
+    margin-bottom: 50px;
+    width: 100%;
+    background-color: $white;
+    border-radius: 8px;
+    transition: all 0.3s ease-in;
+
+    &.closed {
+        opacity: 0;
+    }
+
+    .info-header {
+        background-color: $blue;
+        color: $cream;
+        padding: 20px;
+    }
+
+    .info-content {
+        padding: 20px;
+    }
+
+    .info-close {
+        padding: 0px 20px;
+        cursor: pointer;
+    }
+}

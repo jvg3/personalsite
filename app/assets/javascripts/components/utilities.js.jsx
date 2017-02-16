@@ -1,5 +1,13 @@
+ipsum = function () {
+    return "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas tincidunt gravida est et rhoncus. Pellentesque et gravida leo. Curabitur sed semper quam. Vestibulum eu ligula porta, suscipit est commodo, tempus tortor. Donec est tortor, iaculis eget sodales et, dignissim sit amet risus. Nunc id mi lorem. Ut sit amet sagittis nibh, ut consectetur dui. Nunc fermentum quam nisi, finibus elementum velit malesuada consectetur."
+}
+
 clone = function (object) {
     return Object.assign({}, object)
+}
+
+redirect = function(path) {
+    document.location.href = '/' + path.downcase()
 }
 
 String.prototype.upcase = function() {

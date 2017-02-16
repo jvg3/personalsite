@@ -8,6 +8,7 @@ Nav = class Nav extends React.Component {
     render() {
 
         var menuClass = "nav-menu " + (this.state.selectedItem || "") + (this.state.open ? " open" : " closed")
+        // var menuClass = "nav-menu open " + (this.state.selectedItem || "")
         var updateMenu = this.updateMenu.bind(this)
         var toggleMenu = this.toggleMenu.bind(this)
         var selectedItem = this.state.selectedItem || "closed"
@@ -38,7 +39,7 @@ Nav = class Nav extends React.Component {
                     onMouseEnter={() => toggleMenu(true)}
                     onMouseLeave={() => toggleMenu(false)}
                     className={menuClass}>
-                    {selectedItem}
+                    {this.contentForItem(selectedItem)}
                 </div>
             </div>
         )
@@ -50,6 +51,27 @@ Nav = class Nav extends React.Component {
 
     toggleMenu(open) {
         this.setState({open: open})
+    }
+
+    contentForItem(item) {
+
+        switch(item.downcase()) {
+            case 'projects': return (<Nav.Projects/>)
+        }
+
+        return item
+    }
+
+}
+
+Nav.Projects = class Projects extends React.Component {
+
+    render() {
+        return (
+            <div>
+                PROJECTS
+            </div>
+        )
     }
 
 }
@@ -67,12 +89,13 @@ Nav.Option = class Option extends React.Component {
         return (
             <div
                 className="nav-option"
+                onClick={() => redirect(name)}
                 onMouseLeave={() => toggleMenu(false)}
                 onMouseEnter={() => {
                     updateMenu(menuStyle)
                     toggleMenu(!!menuStyle)
                 }}>
-                <a href={"/" + name.downcase()}>{name.upcase()}</a>
+                {name.upcase()}
             </div>
         )
     }

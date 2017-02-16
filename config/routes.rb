@@ -7,6 +7,8 @@ Rails.application.routes.draw do
 
   get 'home' => 'overview#home'
   get 'about' => 'overview#about'
+  get 'projects' => 'overview#projects'
+  get 'contact' => 'overview#contact'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

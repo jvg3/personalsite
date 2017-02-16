@@ -1,9 +1,7 @@
 @charset 'UTF-8';
 
-$nav-height: 64px;
-$nav-width: 360px;
-
 @import 'font-awesome';
+
 @import 'materialize/components/color';
 @import 'materialize/components/variables';
 @import 'materialize/components/normalize';
@@ -17,20 +15,25 @@ $nav-width: 360px;
 
 @import 'bourbon';
 
+$nav-height: 64px;
+$nav-width: 360px;
+$purple: #333a56;
+$blue: #52658f;
+$cream: #f7f5e6;
+$gray: #e8e8e8;
+$white: #fafafa;
+
 @import 'components/grid';
+@import 'components/header';
+@import 'components/info_card';
 @import 'components/nav';
-@import 'components/overview';
+@import 'components/home';
+@import 'components/about';
 
 
 html, body {
     font-family: 'Julius Sans One', sans-serif;
     background-color: transparent;
-}
-
-button {
-    @include appearance(none);
-    background: transparent;
-    border: 0;
 }
 
 a, a:visited {
@@ -54,13 +57,21 @@ img {
     display: none !important;
 }
 
+.section {
+
+    margin-top: $nav-height;
+    height: 900px;
+    padding: 0px 200px;
+
+}
+
 .background-img {
     position: absolute;
-    height: 900px;
+    height: 964px;
     width: 100%;
     z-index: -1;
     img {
-        height: 900px;
+        height: 964px;
         object-fit: cover;
         display: block;
         margin: 0 auto;

@@ -12,7 +12,7 @@ Overview.Home = class Home extends React.Component {
         var item = this.state.item || null
 
         return (
-            <div className="overview fx-column">
+            <div className="overview section fx-column">
                 <div className="header">FULL. STACK.</div>
                 <div className="icons fx-row">
                     {['cloud', 'database', 'server', 'desktop', 'mobile'].map((icon) =>
@@ -31,7 +31,7 @@ Overview.Home = class Home extends React.Component {
                             X
                         </div>
                     </div>
-                    <div className="info-content">CONTENT</div>
+                    <div className="info-content">{ipsum()}</div>
                 </div>
             </div>
         )

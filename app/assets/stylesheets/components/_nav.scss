@@ -1,17 +1,15 @@
-$purple: #333a56;
-$blue: #52658f;
-$cream: #f7f5e6;
-$gray: #e8e8e8;
-$white: #fafafa;
-
 .nav {
 
     .nav-bar {
 
+        z-index: 100;
+        position: fixed;
+        width: 100%;
         height: $nav-height;
         background-color: $purple;
 
         .nav-option {
+
             cursor: pointer;
             padding: 24px 30px;
             color: $cream;
@@ -31,9 +29,11 @@ $white: #fafafa;
     .nav-menu {
 
         position: fixed;
-        height: 100%;
+        height: calc(100% - 64px);
+        z-index: 100;
         width: $nav-width;
-        background-color: $blue;
+        background-color: $purple;
+        opacity: .9;
         margin-top: $nav-height;
         margin-left: $nav-width;
         align-self: flex-end;

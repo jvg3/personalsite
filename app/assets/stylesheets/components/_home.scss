@@ -1,0 +1,32 @@
+.overview {
+
+    .icons {
+
+        color: $purple;
+        font-size: 64px;
+        background-color: $cream;
+        opacity: 0.8;
+        border-radius: 8px;
+        margin-bottom: 50px;
+
+        .icon {
+            padding: 40px 0;
+            text-align: center;
+            &:hover {
+                background-color: $purple;
+                color: $cream;
+            }
+        }
+    }
+
+    .info-card {
+
+        height: 320px;
+
+        .info-content {
+             height: 240px;
+        }
+
+    }
+
+}
