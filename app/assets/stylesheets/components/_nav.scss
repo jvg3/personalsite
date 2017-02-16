@@ -1,0 +1,47 @@
+$purple: #333a56;
+$blue: #52658f;
+$cream: #f7f5e6;
+$gray: #e8e8e8;
+$white: #fafafa;
+
+.nav {
+
+    .nav-bar {
+
+        height: $nav-height;
+        background-color: $purple;
+
+        .nav-option {
+            cursor: pointer;
+            padding: 24px 30px;
+            color: $cream;
+            font-size: 16px;
+            line-height: 16px;
+            font-weight: bold;
+
+            &:hover {
+                background-color: $white;
+                color: $purple;
+            }
+        }
+
+    }
+
+
+    .nav-menu {
+
+        position: fixed;
+        height: 100%;
+        width: $nav-width;
+        background-color: $blue;
+        margin-top: $nav-height;
+        margin-left: $nav-width;
+        align-self: flex-end;
+        transition: all 0.2s ease-in;
+
+        &.open {
+            margin-left: 0px;
+        }
+    }
+
+}

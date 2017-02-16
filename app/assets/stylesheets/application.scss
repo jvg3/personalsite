@@ -1,0 +1,67 @@
+@charset 'UTF-8';
+
+$nav-height: 64px;
+$nav-width: 360px;
+
+@import 'font-awesome';
+@import 'materialize/components/color';
+@import 'materialize/components/variables';
+@import 'materialize/components/normalize';
+@import 'materialize/components/global';
+@import 'materialize/components/grid';
+@import 'materialize/components/typography';
+@import 'materialize/components/dropdown';
+@import 'materialize/components/modal';
+@import 'materialize/components/toast';
+@import 'materialize/components/tooltip';
+
+@import 'bourbon';
+
+@import 'components/grid';
+@import 'components/nav';
+@import 'components/overview';
+
+
+html, body {
+    font-family: 'Julius Sans One', sans-serif;
+    background-color: transparent;
+}
+
+button {
+    @include appearance(none);
+    background: transparent;
+    border: 0;
+}
+
+a, a:visited {
+    color: inherit;
+}
+
+a,
+button {
+    outline: none;
+}
+
+svg {
+    display: block;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.background-img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    img {
+        width: 100%;
+        opacity: 0.7;
+        filter: sepia(50%);
+    }
+}
+

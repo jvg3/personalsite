@@ -1,0 +1,14 @@
+!!!
+%html
+    %head
+        %title Johngregory
+        = stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true
+        = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Julius+Sans+One'
+        = stylesheet_link_tag 'https://fonts.googleapis.com/css?family=Raleway:400,700,900'
+        = javascript_include_tag 'application', 'data-turbolinks-track' => true
+        = csrf_meta_tags
+    %body
+        = render 'shared/nav'
+        .background-img
+            = image_tag "sanfrancisco.jpg"
+        = yield(:content)
