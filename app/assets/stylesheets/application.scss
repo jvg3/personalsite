@@ -23,13 +23,13 @@ $cream: #f7f5e6;
 $gray: #e8e8e8;
 $white: #fafafa;
 
-@import 'components/grid';
-@import 'components/header';
-@import 'components/info_card';
-@import 'components/nav';
-@import 'components/footer';
-@import 'components/home';
-@import 'components/about';
+@import 'components/*';
+// @import 'components/header';
+// @import 'components/info_card';
+// @import 'components/nav';
+// @import 'components/footer';
+// @import 'components/home';
+// @import 'components/about';
 
 
 html, body {
@@ -60,9 +60,11 @@ img {
 
 .section {
 
-    margin-top: $nav-height;
-    height: 900px;
-    padding: 0px 200px;
+    // margin-top: $nav-height;
+    // height: 900px;
+    // padding: 0px 200px;
+    width: 100%;
+    height: 100%;
 
 }
 

@@ -1,5 +1,9 @@
 .home {
 
+    .header {
+        margin-bottom: 40px;
+    }
+
     .icons {
 
         color: $purple;
@@ -11,22 +15,27 @@
 
         .icon {
             padding: 40px 0;
+            border-radius: 8px;
             text-align: center;
             &:hover {
                 background-color: $purple;
                 color: $cream;
             }
+            // border-left: 1px solid $purple;
+            // border-right: 1px solid $purple;
+            // &:not(:first-of-type) {
+            // }
         }
     }
 
-    .info-card {
+    // .info-card {
 
-        height: 320px;
+    //     height: 320px;
 
-        .info-content {
-             height: 240px;
-        }
+    //     .info-content {
+    //          height: 240px;
+    //     }
 
-    }
+    // }
 
 }

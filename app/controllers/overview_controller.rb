@@ -2,18 +2,9 @@ class OverviewController < ApplicationController
 
   before_action :set_props
   before_action :set_resume_path
-  before_action :set_image_path, only: :about
+  before_action :set_image_path
 
   def home
-  end
-
-  def about
-  end
-
-  def projects
-  end
-
-  def contact
   end
 
   def resume

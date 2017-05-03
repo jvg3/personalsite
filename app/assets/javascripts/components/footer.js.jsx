@@ -3,11 +3,10 @@ Footer = class Footer extends React.Component {
     render() {
         return (
             <div className="footer fx-row fx-hc">
-                <div className="footer-option">
-                    <a href={this.props.resume_path} target="_blank">RESUME</a>
+                <a className="footer-option" target="_blank" href={this.props.resume_path}>
+                    RESUME
                     <div className="fa fa-download"></div>
-                </div>
-                <div className="footer-option">CONTACT</div>
+                </a>
             </div>
         )
     }

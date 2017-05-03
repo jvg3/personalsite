@@ -1,2 +1,3 @@
 - content_for(:content) do
-    = react_component('Overview.Home', @props)
+    = react_component('FluidScroll', @props, { class: "scroll-container"} )
+    = #react_component('Overview.Home', @props)

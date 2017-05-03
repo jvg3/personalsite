@@ -1,27 +1,24 @@
 .about {
 
+    .header {
+        margin-bottom: 40px;
+    }
+
     .info-card {
-
-        height: 480px;
-
-        .info-content {
-
-             height: 400px;
-
-            .content {
-                width: calc(100% - 300px);
-            }
-        }
 
         .about-image {
 
-            height: 240px;
-            width: 240px;
-
             img {
+                height: 240px;
+                width: 240px;
                 border: 5px solid $blue;
                 border-radius: 120px;
             }
+        }
+
+        .content {
+            padding: 0 40px;
+            width: calc(100% - 240px);
         }
     }
 }

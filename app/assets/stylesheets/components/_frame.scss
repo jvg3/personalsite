@@ -1,0 +1,14 @@
+.scroll-container, .frame, .fluid-scroll {
+    height: 100%;
+}
+
+.frame {
+    padding: 50px 200px;
+}
+
+.fluid-menu {
+    position: absolute;
+    z-index: 100;
+    align-self: flex-end;
+    padding: 40px;
+}

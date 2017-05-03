@@ -15,4 +15,12 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require greensock/TweenMax.min
+//= require greensock/jquery.gsap.min
+//= require greensock/easing/EasePack.min
+//= require greensock/plugins/AttrPlugin.min
+//= require greensock/plugins/CSSPlugin.min
+//= require greensock/plugins/DrawSVGPlugin.min
+//= require greensock/plugins/MorphSVGPlugin.min
+//= require fluid/jquery.fluid-scroll.min
 //= require_tree .
