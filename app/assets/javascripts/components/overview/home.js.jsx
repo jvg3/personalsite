@@ -12,9 +12,12 @@ Overview.Home = class Home extends React.Component {
         var item = this.state.item || null
         var icons = ['cloud', 'database', 'server', 'desktop', 'mobile']
 
+        // <img src={this.props.background_img_path}/>
+
         return (
             <div className="home section fx-col">
-                <div className="header">{"LORUM IPSUM"/*FULL. STACK.*/}</div>
+                <div className="background-img fx-row fx-vc fx-hc"></div>
+                <div className="header">FULL. STACK.</div>
                 <div className="icons fx-row">
                     {icons.map((icon) =>
                         <div

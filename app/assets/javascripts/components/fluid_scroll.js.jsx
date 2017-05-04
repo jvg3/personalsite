@@ -38,8 +38,8 @@ FluidScroll = class FluidScroll extends React.Component {
                     ) }
                 </div>
                 <div className="fluid-surface">
-                    <div className={frameClass} data-anchor="home"><Overview.Home/></div>
-                    <div className={frameClass} data-anchor="about"><Overview.About image_path={this.props.image_path} resume_path={this.props.resume_path}/></div>
+                    <div className={frameClass} data-anchor="home"><Overview.Home background_img_path={this.props.background_img_path}/></div>
+                    <div className={frameClass} data-anchor="about"><Overview.About propic_path={this.props.propic_path} resume_path={this.props.resume_path}/></div>
                     <div className={frameClass} data-anchor="projects">Frame 3</div>
                     <div className={frameClass} data-anchor="contact">Frame 4</div>
                 </div>

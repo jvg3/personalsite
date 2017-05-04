@@ -1,8 +1,6 @@
 class OverviewController < ApplicationController
 
   before_action :set_props
-  before_action :set_resume_path
-  before_action :set_image_path
 
   def home
   end
@@ -14,16 +12,12 @@ class OverviewController < ApplicationController
 
   private
 
-  def set_resume_path
-    @props['resume_path'] = ActionController::Base.helpers.asset_path('resume.pdf')
-  end
-
-  def set_image_path
-    @props['image_path'] = ActionController::Base.helpers.asset_path('propic.jpg')
-  end
-
   def set_props
-    @props = {}
+    @props = {
+      background_img_path: ActionController::Base.helpers.asset_path('sanfrancisco.jpg'),
+      propic_path: ActionController::Base.helpers.asset_path('propic.jpg'),
+      resume_path: ActionController::Base.helpers.asset_path('resume.pdf')
+    }
   end
 
 end

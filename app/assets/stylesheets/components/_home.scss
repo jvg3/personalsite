@@ -21,21 +21,22 @@
                 background-color: $purple;
                 color: $cream;
             }
-            // border-left: 1px solid $purple;
-            // border-right: 1px solid $purple;
-            // &:not(:first-of-type) {
-            // }
         }
     }
 
-    // .info-card {
+    .background-img {
 
-    //     height: 320px;
+        z-index: -1;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: image-url('sanfrancisco.jpg') no-repeat center center fixed;
+        background-size: cover;
+        filter: sepia(50%);
+        opacity: 0.7;
 
-    //     .info-content {
-    //          height: 240px;
-    //     }
-
-    // }
+    }
 
 }

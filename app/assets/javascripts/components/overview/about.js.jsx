@@ -16,7 +16,7 @@ Overview.About = class About extends React.Component {
                     <div className="info-header">HEADER</div>
                     <div className="info-content fx-row fx-hsa fx-vc fx-1">
                         <div className="about-image fx-1">
-                            <img src={this.props.image_pathfds}></img>
+                            <img src={this.props.propic_path}></img>
                         </div>
                         <div className="content">{ipsum()}</div>
                     </div>
