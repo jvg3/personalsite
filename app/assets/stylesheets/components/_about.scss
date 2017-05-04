@@ -11,10 +11,10 @@
         .about-image {
 
             img {
-                height: 240px;
-                width: 240px;
+                height: 16vw;
+                width: 16vw;
                 border: 5px solid $blue;
-                border-radius: 120px;
+                border-radius: 8vw;
             }
         }
 
@@ -22,7 +22,7 @@
 
             text-align: center;
             padding: 0 40px;
-            width: calc(100% - 240px);
+            width: calc(100% - 16vw);
 
             .title {
                 font-weight: bold;
