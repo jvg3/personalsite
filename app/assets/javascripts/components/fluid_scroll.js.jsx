@@ -32,6 +32,7 @@ FluidScroll = class FluidScroll extends React.Component {
 
         return (
             <div className="fluid-scroll fx-col">
+                <div className="background-img fx-row fx-vc fx-hc"></div>
                 <div className="fluid-menu fx-col">
                     { ['home', 'about', 'projects', 'contact'].map( (section, i) =>
                         <div className="fluid-menu-item"><FlipButton url={"#" + section} text={section.capitalize()}/></div>

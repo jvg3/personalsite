@@ -40,6 +40,8 @@ gem 'bourbon'
 
 gem "font-awesome-rails"
 
+gem 'momentjs-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

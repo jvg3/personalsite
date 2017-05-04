@@ -15,6 +15,7 @@
 //= require turbolinks
 //= require react
 //= require react_ujs
+//= require moment
 //= require greensock/TweenMax.min
 //= require greensock/jquery.gsap.min
 //= require greensock/easing/EasePack.min

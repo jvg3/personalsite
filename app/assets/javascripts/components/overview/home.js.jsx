@@ -16,7 +16,6 @@ Overview.Home = class Home extends React.Component {
 
         return (
             <div className="home section fx-col">
-                <div className="background-img fx-row fx-vc fx-hc"></div>
                 <div className="header">FULL. STACK.</div>
                 <div className="icons fx-row">
                     {icons.map((icon) =>
@@ -26,6 +25,7 @@ Overview.Home = class Home extends React.Component {
                         </div>
                     )}
                 </div>
+                { item ? null : <div className="look-at-me fa fa-caret-up flash-up"/>}
                 <div className={"info-card fx-1 " + (item || "closed")}>
                     <div className="info-header fx-row fx-hsb">
                         <div>{this.headerForItem()}</div>

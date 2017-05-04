@@ -1,0 +1,57 @@
+@include keyframes(flash-up) {
+    0% {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+    50% {
+        @include transform(translateY(-30px));
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@include keyframes(flash-down) {
+    0% {
+        opacity: 1;
+        @include transform(translateY(-30px));
+    }
+    50% {
+        @include transform(translateY(0));
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@include keyframes(bounce) {
+    0%, 20%, 50%, 80%, 100% {
+        @include transform(translateY(0));
+    }
+    40% {
+        @include transform(translateY(-30px));
+    }
+    60% {
+       @include transform(translateY(-15px));
+    }
+}
+
+.bounce {
+    @include animation(bounce 2s infinite);
+}
+
+.flash-down {
+    @include animation(flash-down 2s infinite);
+}
+
+.flash-up {
+    @include animation(flash-up 2s infinite);
+}
+
+.look-at-me {
+    text-align: center;
+    font-size: 64px;
+    color: $cream;
+}
