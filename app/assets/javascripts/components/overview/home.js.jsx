@@ -42,9 +42,7 @@ Overview.Home = class Home extends React.Component {
         )
     }
 
-    updateCard(item) {
-        this.setState({item: item})
-    }
+    updateCard(item) { this.setState({item: item}) }
 
     headerForItem() {
 
@@ -52,11 +50,24 @@ Overview.Home = class Home extends React.Component {
 
         switch(item) {
             case 'cloud': return 'CLOUD/HOSTING'
-            case 'server': return 'SERVER-SIDE/API DEVELOPMENT'
+            case 'server': return 'SERVER-SIDE DEVELOPMENT'
+            case 'desktop': return 'FRONT-END WEB DEVELOPMENT'
+        }
+        return item.upcase()
+    }
+
+    contentForItem() {
+
+        var item = this.state.item || ''
+
+        switch(item) {
+            case 'cloud': return 'Experience configuring and deploying and heroku instances from scratch. Have worked with dynamic AWS S3 storage and EC2 computing.'
+            case 'database': return 'Experience with both SQL (PostgreSQL) and NoSQL (MongoDB) setup, queries, and app integration'
+            case 'server': return 'Development of '
             case 'desktop': return 'FRONT-END WEB DEVELOPMENT'
             case 'mobile': return 'NATIVE MOBILE IOS + ANDROID'
         }
-        return item.upcase()
+
     }
 
 
