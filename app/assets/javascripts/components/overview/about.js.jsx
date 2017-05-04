@@ -21,13 +21,13 @@ Overview.About = class About extends React.Component {
                             <img src={this.props.propic_path}></img>
                         </div>
                         <div className="content fx-col fx-vsa">
-                            <div className="title">
+                            <div className="title large">
                                 I am a midwest-grown, San Francisco-bound software developer
                                 with a passion for all things technology.
                             </div>
                             <div>
                                 I will be relocating to the bay area in
-                                <b>{"   " + numDays + "   "}</b>
+                                <b className="large">{"   " + numDays + "   "}</b>
                                 days and will be looking for full time employment.
                                 <br/>
                                 Since graduation I have spent my time in Chicago, IL working for a startup dev shop -
