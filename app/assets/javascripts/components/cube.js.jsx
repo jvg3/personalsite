@@ -8,10 +8,10 @@ Cube = class Cube extends React.Component {
 
                     // <div className="cube-face cube-face-left fx-row fx-vc fx-hc">5</div>
                     // <div className="cube-face cube-face-right fx-row fx-vc fx-hc">6</div>
+                    // <div className="background-img fx-row fx-vc fx-hc"></div>
     render() {
         return (
             <div className="cube-container" onWheel={ (e) => this.onWheel(e) }>
-                <div className="background-img fx-row fx-vc fx-hc"></div>
                 <div className="cube-wrap">
                     <div className="cube-face cube-face-front fx-row fx-vc fx-hc"><Overview.Home background_img_path={this.props.background_img_path}/></div>
                     <div className="cube-face cube-face-bottom fx-row fx-vc fx-hc"><Overview.About propic_path={this.props.propic_path} resume_path={this.props.resume_path}/></div>
