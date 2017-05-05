@@ -76,7 +76,8 @@ img {
     // background-size: cover !important;
 }
 
-.background-img {
+// .background-img {
+.cube-face {
 
     background: image-url('sanfrancisco.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -87,7 +88,7 @@ img {
     height: 100%;
     width: 100%;
     filter: sepia(50%);
-    opacity: 0.7;
+    opacity: 1;
 
 }
 
