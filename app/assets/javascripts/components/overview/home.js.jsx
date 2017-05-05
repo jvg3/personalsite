@@ -81,9 +81,6 @@ Overview.Home = class Home extends React.Component {
 
         var asset_paths = this.props.asset_paths
 
-        console.log("asset_paths.heroku")
-        console.log(asset_paths.heroku)
-
         switch(item) {
             case 'cloud': return [
                 { name: 'Heroku', path: asset_paths.heroku },
@@ -91,8 +88,8 @@ Overview.Home = class Home extends React.Component {
             ]
             case 'database': return [
                 { name: 'PostgreSQL', path: asset_paths.postgres },
-                { name: 'MongoDB', path: asset_paths.mongo },
-                { name: 'Redis', path: asset_paths.redis }
+                { name: 'Redis', path: asset_paths.redis },
+                { name: 'MongoDB', path: asset_paths.mongo }
             ]
             case 'server': return [
                 { name: 'Ruby on Rails', path: asset_paths.rails },
