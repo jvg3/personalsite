@@ -13,18 +13,19 @@ Overview.Home = class Home extends React.Component {
         var icons = ['cloud', 'database', 'server', 'desktop', 'mobile']
 
         return (
-            <div className="home section fx-col">
+            <div className="home section fx-col fx-vsa">
                 <div className="header">FULL. STACK.</div>
                 <div className="icons fx-row">
                     {icons.map((icon) =>
                         <div
+                            key={icon}
                             onMouseEnter={() => this.updateCard(icon)}
                             className={"icon fx-1 fx-row fx-vc fx-hc fa fa-" + icon}>
                         </div>
                     )}
                 </div>
                 { item ? null : <div className="look-at-me fa fa-caret-up flash-up"/> }
-                <div className={"info-card fx-1 " + (item || "closed")}>
+                <div className={"info-card fx-col " + (item || "closed")}>
                     <div className="info-header fx-row fx-hsb">
                         <div>{this.headerForItem(item)}</div>
                         <div
@@ -33,12 +34,12 @@ Overview.Home = class Home extends React.Component {
                             X
                         </div>
                     </div>
-                    <div className="info-content large fx-col fx-hc fx-vsa fx-expand-h">
+                    <div className="info-content large fx-col fx-hc fx-vsa fx-1">
                         <div className="tech-icons fx-row fx-expand-w fx-1 fx-vc fx-hsa">
                             <div className="large fx-1"><b>Key Techs:</b></div>
                             <div className="fx-row fx-3">
                                 { this.techsForItem(item).map( (tech, i) =>
-                                    <div className="tech-wrap fx-1 fx-col fx-hc">
+                                    <div  key={tech.path} className="tech-wrap fx-1 fx-col fx-hc">
                                         <div className="large"><b>{tech.name}</b></div>
                                         <img src={tech.path}/>
                                     </div>
@@ -80,8 +81,6 @@ Overview.Home = class Home extends React.Component {
     techsForItem(item) {
 
         var asset_paths = this.props.asset_paths
-
-        console.log(asset_paths)
 
         switch(item) {
             case 'cloud': return [

@@ -1,8 +1,8 @@
 .home {
 
-    .header {
-        margin-bottom: 40px;
-    }
+    // .header {
+    //     margin-bottom: 40px;
+    // }
 
     .icons {
 
@@ -12,7 +12,7 @@
         background-color: $white;
         opacity: 0.9;
         border-radius: 8px;
-        margin-bottom: 40px;
+        // margin-bottom: 40px;
 
         .icon {
             height: 150px;
@@ -24,6 +24,11 @@
                 color: $cream;
             }
         }
+    }
+
+    .info-card {
+        min-height: 35vh;
+        max-height: 80vh;
     }
 
     .info-content {
