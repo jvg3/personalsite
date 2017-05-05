@@ -1,14 +1,5 @@
 FluidScroll = class FluidScroll extends React.Component {
 
-    // constructor(props) {
-
-    //     super(props)
-    //     this.state = {
-    //         currentFrame: 'home'
-    //     }
-
-    // }
-
     componentDidMount() {
 
         var _this = this
