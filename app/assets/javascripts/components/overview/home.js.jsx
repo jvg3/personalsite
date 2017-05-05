@@ -33,7 +33,12 @@ Overview.Home = class Home extends React.Component {
                             X
                         </div>
                     </div>
-                    <div className="info-content">{this.contentForItem()}</div>
+                    <div className="info-content large">
+                        <div className="tech-icons fx-row">
+                            <div className="fa fa-heroku"></div>
+                        </div>
+                        <div className="large">{this.contentForItem()}</div>
+                    </div>
                 </div>
                 {/*<Footer resume_path={this.props.resume_path} />*/}
             </div>
