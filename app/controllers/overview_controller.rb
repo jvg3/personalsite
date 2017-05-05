@@ -13,11 +13,31 @@ class OverviewController < ApplicationController
   private
 
   def set_props
+
     @props = {
-      background_img_path: ActionController::Base.helpers.asset_path('sanfrancisco.jpg'),
-      propic_path: ActionController::Base.helpers.asset_path('propic.jpg'),
-      resume_path: ActionController::Base.helpers.asset_path('resume.pdf')
+      # background_img_path: ActionController::Base.helpers.asset_path('sanfrancisco.jpg'),
+      asset_paths: {
+        propic: asset_path('propic.jpg'),
+        resume: asset_path('resume.pdf'),
+        heroku: asset_path('heroku.svg'),
+        aws: asset_path('aws.svg'),
+        postgres: asset_path('postgres.svg'),
+        mongo: asset_path('mongo.svg'),
+        meteor: asset_path('meteor.svg'),
+        rails: asset_path('rails.svg'),
+        redis: asset_path('redis.svg'),
+        html: asset_path('html.svg'),
+        scss: asset_path('scss.svg'),
+        react: asset_path('react.svg'),
+        javascript: asset_path('javascript'),
+        android: asset_path('android'),
+        ios: asset_path('ios')
+      }
     }
+  end
+
+  def asset_path(path)
+    ActionController::Base.helpers.asset_path(path)
   end
 
 end

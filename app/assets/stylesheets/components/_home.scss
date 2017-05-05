@@ -24,9 +24,31 @@
         }
     }
 
+    .info-content {
+        text-align: center;
+        // font-family: 'Raleway';
+    }
+
     .look-at-me {
         color: $purple;
         left: calc(50%)
+    }
+
+    .tech-icons {
+
+        margin-bottom: 20px;
+
+        .tech-wrap {
+
+            & > div {
+                margin-bottom: 10px;
+            }
+
+            img {
+                height: 100px;
+                width: 100px;
+            }
+        }
     }
 
 }

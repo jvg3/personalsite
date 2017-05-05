@@ -8,8 +8,8 @@ Cube = class Cube extends React.Component {
 
     render() {
 
-        var home = <Overview.Home background_img_path={this.props.background_img_path}/>
-        var about = <Overview.About propic_path={this.props.propic_path} resume_path={this.props.resume_path}/>
+        var home = <Overview.Home asset_paths={this.props.asset_paths}/>
+        var about = <Overview.About asset_paths={this.props.asset_paths}/>
 
         return (
             <div className="cube-container fx-col" onWheel={ (e) => this.onWheel(e) }>
