@@ -81,6 +81,8 @@ Overview.Home = class Home extends React.Component {
 
         var asset_paths = this.props.asset_paths
 
+        console.log(asset_paths)
+
         switch(item) {
             case 'cloud': return [
                 { name: 'Heroku', path: asset_paths.heroku },
