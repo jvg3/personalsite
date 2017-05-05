@@ -6,14 +6,16 @@
 
     .icons {
 
+        height: 150px;
         color: $purple;
         font-size: 64px;
         background-color: $white;
         opacity: 0.9;
         border-radius: 8px;
-        margin-bottom: 50px;
+        margin-bottom: 40px;
 
         .icon {
+            height: 150px;
             padding: 40px 0;
             border-radius: 8px;
             text-align: center;

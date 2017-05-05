@@ -29,9 +29,9 @@ class OverviewController < ApplicationController
         html: asset_path('html.svg'),
         scss: asset_path('scss.svg'),
         react: asset_path('react.svg'),
-        javascript: asset_path('javascript'),
-        android: asset_path('android'),
-        ios: asset_path('ios')
+        javascript: asset_path('javascript.svg'),
+        android: asset_path('android.svg'),
+        ios: asset_path('ios.svg')
       }
     }
   end
