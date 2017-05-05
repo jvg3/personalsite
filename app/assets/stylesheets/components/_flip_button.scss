@@ -1,20 +1,38 @@
+$menu-height: 40px;
+
+@media #{$medium-and-down} {
+    .flip-btn-wrapper,
+    .fluid-menu-item,
+    .flip-btn,
+    .flip-btn-face {
+        // display: none;
+        height: 160px !important;
+    }
+
+    .fluid-menu {
+        justify-content: center;
+        height: 100%;
+    }
+
+}
+
 .fluid-menu-item {
     width: 120px;
-    height: 40px;
+    height: $menu-height;
     margin: 5px 0;
 }
 
 .flip-btn-wrapper {
     // pointer-events: none;
     width: 120px;
-    height: 40px;
+    height: $menu-height;
     position: relative;
 }
 
 .flip-btn,
 .flip-btn-face {
     width: 120px;
-    height: 40px;
+    height: $menu-height;
     position: absolute;
     cursor: pointer;
 }
@@ -36,7 +54,7 @@
 
 .flip-btn-mid {
     left: 0;
-    height: 40px;
+    height: $menu-height;
     width: 20px;
     background-color: $purple;
     transform: translate(-10px) rotateY(90deg);

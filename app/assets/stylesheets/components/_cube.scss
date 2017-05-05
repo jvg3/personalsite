@@ -21,19 +21,14 @@ $cube-padding-w: 0;
 
 .cube-wrap {
 
-    // margin: 50px;
     height: $cube-height;
     width: $cube-width;
     transform-style: preserve-3d;
     transform: translateZ( -$cube-depth );
-    // transform: rotateY( 10deg ) translateZ( -$cube-depth );
-    // transform: rotateX( 100deg );
 
     .cube-face {
 
-        // opacity: .7;
         padding: 40px 200px;
-        // border: 10px solid $blue;
         transition: transform 2s;
         transform-style: preserve-3d;
         position: absolute;
@@ -41,6 +36,9 @@ $cube-padding-w: 0;
         height: $cube-height;
         width: $cube-width;
         // font-size: 100px;
+        // @media #{$medium-and-down} {
+        //   padding: 40px 200px 40px 40px;
+        // }
 
     }
 
