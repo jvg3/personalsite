@@ -24,12 +24,13 @@ Cube = class Cube extends React.Component {
 
     onWheel(e) {
 
+        e.preventDefault();
         e.stopPropagation();
 
         if (this.accept_input) {
             this.rotate(e.deltaY > 0 ? 1 : -1)
             this.accept_input = false
-            setTimeout( () => this.accept_input = true, 1000)
+            setTimeout( () => this.accept_input = true, 1200)
         }
 
     }
