@@ -10,6 +10,8 @@ Cube = class Cube extends React.Component {
 
         var home = <Overview.Home asset_paths={this.props.asset_paths}/>
         var about = <Overview.About asset_paths={this.props.asset_paths}/>
+        var projects = <Overview.Projects asset_paths={this.props.asset_paths}/>
+        var contact = <Overview.Contact asset_paths={this.props.asset_paths}/>
 
         return (
             <div className="cube-container fx-col" onWheel={ (e) => this.onWheel(e) }>
@@ -21,8 +23,8 @@ Cube = class Cube extends React.Component {
                 <div className="cube-wrap">
                     { this.cubeFace('cube-face-front', home) }
                     { this.cubeFace('cube-face-bottom', about) }
-                    { this.cubeFace('cube-face-back', <div/>) }
-                    { this.cubeFace('cube-face-top',  <div/>) }
+                    { this.cubeFace('cube-face-back', projects) }
+                    { this.cubeFace('cube-face-top', contact) }
                 </div>
             </div>
         )
