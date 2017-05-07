@@ -50,6 +50,7 @@ Overview.Home = class Home extends React.Component {
                         <div className="large fx-1">{this.contentForItem(item)}</div>
                     </div>
                 </div>
+                <div className="fa fa-angle-down"></div>
                 {/*<Footer resume_path={this.props.resume_path} />*/}
             </div>
         )
