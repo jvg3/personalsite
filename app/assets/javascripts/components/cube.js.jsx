@@ -2,16 +2,18 @@ Cube = class Cube extends React.Component {
 
     constructor(props) {
         super(props)
-        this.state = { rotate: 0, accept_input: true }
+        this.state = { rotate: 0 }
         this.accept_input = true
     }
 
     render() {
 
-        var home = <Overview.Home asset_paths={this.props.asset_paths}/>
-        var about = <Overview.About asset_paths={this.props.asset_paths}/>
-        var projects = <Overview.Projects asset_paths={this.props.asset_paths}/>
-        var contact = <Overview.Contact asset_paths={this.props.asset_paths}/>
+        var asset_paths = this.props.asset_paths
+
+        var home = <Overview.Home asset_paths={asset_paths}/>
+        var about = <Overview.About asset_paths={asset_paths}/>
+        var projects = <Overview.Projects asset_paths={asset_paths}/>
+        var contact = <Overview.Contact asset_paths={asset_paths}/>
 
         return (
             <div className="cube-container fx-col" onWheel={ (e) => this.onWheel(e) }>
@@ -57,7 +59,7 @@ Cube = class Cube extends React.Component {
     cubeFace(klass, content) {
 
         return (
-            <div className={klass + " cube-face fx-row fx-vc fx-hc"}>
+            <div className={klass + " cube-face fx-row fx-vc fx-hc"} key={klass}>
                 <div className="background-img fx-row fx-vc fx-hc"></div>
                 { content }
             </div>
@@ -72,7 +74,7 @@ Cube = class Cube extends React.Component {
         var rotateDiff = i - faceNum
         var klass = "fluid-menu-item" + ( faceNum === i ? " active" : "" )
 
-        return (<div className={klass}><FlipButton key={i} onClick={ () => this.rotate(rotateDiff) } text={section.capitalize()}/></div>)
+        return (<div key={i} className={klass}><FlipButton onClick={ () => this.rotate(rotateDiff) } text={section.capitalize()}/></div>)
     }
 
 }

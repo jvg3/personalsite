@@ -31,7 +31,10 @@ class OverviewController < ApplicationController
         react: asset_path('react.svg'),
         javascript: asset_path('javascript.svg'),
         android: asset_path('android.svg'),
-        ios: asset_path('ios.svg')
+        ios: asset_path('ios.svg'),
+        scion: asset_path('lightning.png'),
+        scapegoat: asset_path('logo-mark.svg'),
+        tipyourself: asset_path('tipyourself.png'),
       }
     }
 
