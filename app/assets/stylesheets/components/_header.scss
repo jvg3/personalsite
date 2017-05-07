@@ -4,6 +4,7 @@ $cream: #f7f5e6;
 $gray: #e8e8e8;
 $white: #fafafa;
 
+.header-secondary,
 .header {
     font-family: 'Raleway', sans-serif;
     line-height: 4.0vw;
@@ -12,4 +13,10 @@ $white: #fafafa;
     color: $purple;
     font-weight: 700;
     opacity: 0.9;
+}
+
+.header-secondary {
+    line-height: 2.0vw;
+    font-size: 2.0vw;
+    margin: 8px 0;
 }

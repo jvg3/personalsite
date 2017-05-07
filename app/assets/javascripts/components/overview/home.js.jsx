@@ -15,6 +15,7 @@ Overview.Home = class Home extends React.Component {
         return (
             <div className="home section fx-col fx-vsa">
                 <div className="header">FULL. STACK.</div>
+                <div className="header-secondary">John Gregory - Interactive Resume</div>
                 <div className="icons fx-row">
                     {icons.map((icon) =>
                         <div
