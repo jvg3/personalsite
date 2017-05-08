@@ -36,7 +36,7 @@ Overview.Home = class Home extends React.Component {
                             X
                         </div>
                     </div>
-                    <div className="info-content large fx-col fx-hc fx-vsa fx-1">
+                    <div className="info-content large fx-col fx-hc fx-vsb fx-1">
                         <div className="tech-icons fx-row fx-expand-w fx-1 fx-vc fx-hsa">
                             <div className="large fx-1"><b>Key Techs:</b></div>
                             <div className="fx-row fx-3">
