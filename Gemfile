@@ -42,6 +42,8 @@ gem "font-awesome-rails"
 
 gem 'momentjs-rails'
 
+gem 'animate-rails'
+
 # Use Unicorn as the app server
 # gem 'unicorn'
 

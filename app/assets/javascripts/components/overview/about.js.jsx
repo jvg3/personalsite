@@ -10,6 +10,7 @@ Overview.About = class About extends React.Component {
     render() {
 
         var numDays = moment('2017-06-15').diff(moment(), 'days')
+        var asset_paths = this.props.asset_paths
 
         return (
             <div className="about section fx-col fx-hc">
@@ -18,7 +19,7 @@ Overview.About = class About extends React.Component {
                     <div className="info-header">About</div>
                     <div className="info-content fx-row fx-hsa fx-vc fx-1">
                         <div className="about-image fx-1">
-                            <img src={this.props.propic_path}></img>
+                            <img src={asset_paths.propic}></img>
                         </div>
                         <div className="content fx-col fx-vsa">
                             <div className="title large">
@@ -41,7 +42,7 @@ Overview.About = class About extends React.Component {
                     </div>
                 </div>
                 <div className="look-at-me fa fa-caret-down flash-down"/>
-                <Footer resume_path={this.props.resume_path}/>
+                <Footer resume_path={asset_paths.resume}/>
             </div>
         )
     }

@@ -1,19 +1,17 @@
 .home {
 
-    .header {
-        margin-bottom: 40px;
-    }
-
     .icons {
 
+        height: 130px;
         color: $purple;
-        font-size: 64px;
-        background-color: $cream;
-        opacity: 0.8;
+        font-size: 50px;
+        background-color: $white;
+        opacity: 0.9;
         border-radius: 8px;
-        margin-bottom: 50px;
+        // margin-bottom: 40px;
 
         .icon {
+            height: 130px;
             padding: 40px 0;
             border-radius: 8px;
             text-align: center;
@@ -24,9 +22,36 @@
         }
     }
 
+    .info-card {
+        min-height: 35vh;
+        max-height: 80vh;
+    }
+
+    .info-content {
+        text-align: center;
+        // font-family: 'Raleway';
+    }
+
     .look-at-me {
         color: $purple;
         left: calc(50%)
+    }
+
+    .tech-icons {
+
+        margin-bottom: 20px;
+
+        .tech-wrap {
+
+            & > div {
+                margin-bottom: 10px;
+            }
+
+            img {
+                height: 80px;
+                width: 80px;
+            }
+        }
     }
 
 }

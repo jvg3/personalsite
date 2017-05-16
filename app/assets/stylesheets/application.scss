@@ -33,9 +33,10 @@ $white: #fafafa;
 
 
 html, body {
+    background-color: $purple;
     font-size: 0.9vw;
     font-family: 'Julius Sans One', sans-serif;
-    background-color: transparent;
+    // background-color: transparent;
 }
 
 .large {
@@ -76,8 +77,8 @@ img {
     // background-size: cover !important;
 }
 
-// .background-img {
-.cube-face {
+.background-img {
+// .cube-face {
 
     background: image-url('sanfrancisco.jpg') no-repeat center center fixed;
     background-size: cover;

@@ -1,0 +1,54 @@
+.contact {
+
+    .bus-card {
+
+        font-size: 16px;
+        width: 525px;
+        height: 300px;
+        background-color: $white;
+        color: $blue;
+        margin-bottom: 40px;
+
+        .bus-header {
+
+            background-color: $blue;
+            color: $white;
+            text-align: center;
+            padding: 8px;
+
+            img {
+                height: 64px;
+                width: 64px;
+                border: 4px solid $purple;
+                border-radius: 32px;
+            }
+        }
+
+        .bus-content {
+
+            padding: 12px;
+            .bus-icons {
+                font-size: 20px;
+                .fa {
+                    font-size: 48px;
+                    margin-right: 15px;
+                }
+            }
+            .cell {
+                margin: 8px 0;
+                border-top: 1px solid $blue;
+                border-bottom: 1px solid $blue;
+                b {
+                    margin-right: 10px;
+                }
+            }
+        }
+
+        .bus-footer {
+            font-size: 12px;
+            text-align: center;
+        }
+
+    }
+
+}
