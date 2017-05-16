@@ -9,11 +9,13 @@ Cube = class Cube extends React.Component {
     render() {
 
         var asset_paths = this.props.asset_paths
-
         var home = <Overview.Home asset_paths={asset_paths}/>
         var about = <Overview.About asset_paths={asset_paths}/>
         var projects = <Overview.Projects asset_paths={asset_paths}/>
         var contact = <Overview.Contact asset_paths={asset_paths}/>
+
+        var photos = [asset_paths.scion, asset_paths.scion, asset_paths.scion]
+        var photoViewer = this.state.photo_viewer_open ? <PhotoViewer photos={photos}/> : null
 
         return (
             <div className="cube-container fx-col" onWheel={ (e) => this.onWheel(e) }>
@@ -28,6 +30,7 @@ Cube = class Cube extends React.Component {
                     { this.cubeFace('cube-face-back', projects) }
                     { this.cubeFace('cube-face-top', contact) }
                 </div>
+                { photoViewer }
             </div>
         )
     }

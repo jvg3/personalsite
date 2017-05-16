@@ -16,6 +16,7 @@
 //= require react
 //= require react_ujs
 //= require moment
+//= require underscore
 //= require greensock/TweenMax.min
 //= require greensock/jquery.gsap.min
 //= require greensock/easing/EasePack.min
