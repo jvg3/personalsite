@@ -2,12 +2,12 @@
 
     z-index: 200;
     position: absolute;
-    top: 10%;
-    left: 10%;
-    height: 80%;
-    width: 80%;
+    top: 2.5%;
+    left: 2.5%;
+    height: 95%;
+    width: 95%;
     background-color: #333337;
-    opacity: .99;
+    opacity: 0;
     overflow: hidden;
 
     .view-container {
@@ -17,10 +17,11 @@
         img {
 
             // max-width: calc(100% - 200px);
-            // max-height: 80%;
+            max-height: 90%;
             width: 100%;
-            padding: 0 20%;
+            padding: 0 5%;
             position: absolute;
+            background-size: contain;
 
             &.left, &.right {
                 opacity: 0;
@@ -48,6 +49,7 @@
     .close {
         color: white;
         position: absolute;
+        cursor: pointer;
         left: calc(100% - 34px);
         top: 10px;
         font-size: 24px;
@@ -60,11 +62,11 @@
 
         .ellipse {
             color: #dadada;
-            font-size: 18px;
+            font-size: 32px;
             margin: 0 5px;
 
             &.active {
-                font-size: 24px;
+                font-size: 48px;
                 color: white;
             }
         }

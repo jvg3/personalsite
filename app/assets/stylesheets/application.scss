@@ -64,6 +64,10 @@ img {
     display: none !important;
 }
 
+.noshow {
+    opacity: 0;
+}
+
 .section {
     padding: 0;
     width: 100%;
@@ -91,4 +95,3 @@ img {
     opacity: 1;
 
 }
-

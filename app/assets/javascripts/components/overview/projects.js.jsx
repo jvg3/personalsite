@@ -25,7 +25,6 @@ Overview.Projects = class Projects extends React.Component {
                     ) }
                 </div>
                 { this.infoCard() }
-                { this.state.photo_viewer_open ? <PhotoViewer photos={photos}/> : null }
             </div>
         )
     }
@@ -74,7 +73,7 @@ Overview.Projects = class Projects extends React.Component {
                     Management/Analytics software for a large student housing company. Long running project with many concurrent technologies.
                     Since December 2016 I have been the sole developer working on the platform.
                     I have worked to rebuild the front-end in React, as well as streamline the database structure (by removing Mongo and using PostgreSQL as the primary database, additionally using Redis as a cache.) '
-                    <div className="proj-link" onClick={ () => this.setState({ photo_viewer_open: true }) }>View Screencaps -></div>
+                    <div className="proj-link" onClick={ () => this.props.openPhotoViewer() }>View Screencaps -></div>
                 </div>
         }
     }

@@ -19,18 +19,18 @@ PhotoViewer = class PhotoViewer extends React.Component {
         var right = (photo_index + 1) < photos.length ? photos[photo_index + 1] : ""
 
         return (
-            <div className="photo-viewer text-white noselect">
+            <div className={"photo-viewer text-white noselect animated fadeIn" + (this.props.open ? "" : " hidden")}>
                 <div className="fa fa-times close pointer" onClick={ () => this.props.close() }/>
                 <div className="view-container fx-row fx-vc fx-hsb">
-                    <div onClick={ () => this.nextImage(-1) } className="fa fa-chevron-left"></div>
+                    <div onClick={ () => this.nextImage(-1) } className={"fa fa-chevron-left" + (photo_index == 0 ? " noshow" : "")}></div>
                     <img className="left" src={left}/>
                     <img className="active" src={photo}/>
                     <img className="right" src={right}/>
-                    <div onClick={ () => this.nextImage(1) } className="fa fa-chevron-right"></div>
+                    <div onClick={ () => this.nextImage(1) } className={"fa fa-chevron-right" + (photo_index == photos.length - 1 ? " noshow" : "")}></div>
                 </div>
                 <div className="ellipses fx-row fx-hc fx-vc">
                     { _.range(this.state.photos.length).map( (ellipse, i) =>
-                        <div className={"ellipse" + (photo_index === ellipse ? " active" : "")}>&bull;</div>
+                        <div key={i} className={"ellipse" + (photo_index === ellipse ? " active" : "")}>&bull;</div>
                     ) }
                 </div>
             </div>
@@ -56,6 +56,7 @@ PhotoViewer = class PhotoViewer extends React.Component {
                 var left = $('.photo-viewer img.left')
                 TweenLite.to(img, 1, { x: "50%", opacity: 0 })
                 TweenLite.to(left, 1, { x: "50%", opacity: 1, onComplete: () => this.setState({ photo_index: next_step }, this.reset()) } )
+
             }
 
 
