@@ -64,6 +64,10 @@ img {
     display: none !important;
 }
 
+.noshow {
+    opacity: 0;
+}
+
 .section {
     padding: 0;
     width: 100%;
@@ -78,7 +82,6 @@ img {
 }
 
 .background-img {
-// .cube-face {
 
     background: image-url('sanfrancisco.jpg') no-repeat center center fixed;
     background-size: cover;
@@ -92,4 +95,3 @@ img {
     opacity: 1;
 
 }
-

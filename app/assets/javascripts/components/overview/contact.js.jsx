@@ -32,7 +32,7 @@ Overview.Contact = class Contact extends React.Component {
                             <div><b>Email:</b> johnvgregory3@gmail.com</div>
                         </div>
                         <div className="bus-footer">
-                            This site was built with React, Flexbox, and Ruby on Rails. Hosted on Heroku.
+                            This site was custom built with React and Ruby on Rails. Hosted on Heroku.
                         </div>
                     </div>
                 </div>

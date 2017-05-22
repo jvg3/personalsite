@@ -9,11 +9,16 @@ Cube = class Cube extends React.Component {
     render() {
 
         var asset_paths = this.props.asset_paths
-
         var home = <Overview.Home asset_paths={asset_paths}/>
         var about = <Overview.About asset_paths={asset_paths}/>
-        var projects = <Overview.Projects asset_paths={asset_paths}/>
+        var projects = <Overview.Projects asset_paths={asset_paths} openPhotoViewer={ () => this.openPhotoViewer() } />
         var contact = <Overview.Contact asset_paths={asset_paths}/>
+
+        var photos = [
+            asset_paths.scion_screenshots.screenshot1,
+            asset_paths.scion_screenshots.screenshot2,
+            asset_paths.scion_screenshots.screenshot3
+        ]
 
         return (
             <div className="cube-container fx-col" onWheel={ (e) => this.onWheel(e) }>
@@ -28,6 +33,7 @@ Cube = class Cube extends React.Component {
                     { this.cubeFace('cube-face-back', projects) }
                     { this.cubeFace('cube-face-top', contact) }
                 </div>
+                <PhotoViewer photos={photos} open={!!this.state.photo_viewer_open} close={ () => this.closePhotoViewer() } />
             </div>
         )
     }
@@ -40,7 +46,7 @@ Cube = class Cube extends React.Component {
         if (this.accept_input) {
             this.rotate(e.deltaY > 0 ? 1 : -1)
             this.accept_input = false
-            setTimeout( () => this.accept_input = true, 1500)
+            setTimeout( () => this.accept_input = true, 1500 )
         }
 
     }
@@ -53,6 +59,7 @@ Cube = class Cube extends React.Component {
         var cube = $('.cube-wrap')
 
         TweenLite.to(cube, 1, { rotationX: rotate*90 });
+        this.closePhotoViewer()
 
     }
 
@@ -70,11 +77,19 @@ Cube = class Cube extends React.Component {
     menuItem(section, i) {
 
         var rotate = this.state.rotate || 0
-        var faceNum = (rotate+4)%4
+        var faceNum = (rotate + 4) % 4
         var rotateDiff = i - faceNum
         var klass = "fluid-menu-item" + ( faceNum === i ? " active" : "" )
 
         return (<div key={i} className={klass}><FlipButton onClick={ () => this.rotate(rotateDiff) } text={section.capitalize()}/></div>)
+    }
+
+    openPhotoViewer() {
+        this.setState( { photo_viewer_open: true }, () => TweenLite.to( $('.photo-viewer'), 0.5, { opacity: 0.99 } ) )
+    }
+
+    closePhotoViewer() {
+        TweenLite.to( $('.photo-viewer'), 0.5, { opacity: 0, onComplete: () => this.setState( { photo_viewer_open: false } ) } )
     }
 
 }

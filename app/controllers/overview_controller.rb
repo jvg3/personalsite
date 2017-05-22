@@ -35,6 +35,11 @@ class OverviewController < ApplicationController
         scion: asset_path('lightning.png'),
         scapegoat: asset_path('logo-mark.svg'),
         tipyourself: asset_path('tipyourself.png'),
+        scion_screenshots: {
+          screenshot1: asset_path('screenshot1.png'),
+          screenshot2: asset_path('screenshot2.png'),
+          screenshot3: asset_path('screenshot3.png')
+        }
       }
     }
 
