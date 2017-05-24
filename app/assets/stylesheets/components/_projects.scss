@@ -1,5 +1,6 @@
 .projects {
 
+
     .proj-wrap {
 
         height: 14vw;
@@ -9,13 +10,16 @@
         border: 4px solid $blue;
         opacity: 0.92;
         margin-bottom: 40px;
+        @include transition(0.3s width ease-in, 0.3s height ease-in, 0.3s margin ease-in);
 
         &:hover {
-            border: 12px solid $purple;
+            border: 8px solid $purple;
             opacity: 1;
+            // @include transform( translateY(-20px) );
         }
 
         &.active {
+            margin-top: -40px;
             height: 16vw;
             width: 16vw;
             // transition: width .3s;
