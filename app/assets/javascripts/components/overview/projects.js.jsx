@@ -13,7 +13,7 @@ Overview.Projects = class Projects extends React.Component {
         var selected_proj = this.state.selected_proj || {}
         return (
             <div className="projects fx-col fx-vsa fx-expand fx-hc fx-vc">
-                <div className="header">Projects</div>
+                <div className="header">Notable Projects</div>
                 <div className=" fx-row fx-expand-w fx-hsa fx-vc">
                     { ['tipyourself', 'scion', 'scapegoat'].map( (proj, i) =>
                         <div
