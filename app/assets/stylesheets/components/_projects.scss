@@ -1,6 +1,5 @@
 .projects {
 
-
     .proj-wrap {
 
         height: 14vw;
@@ -12,14 +11,10 @@
         margin-bottom: 40px;
         @include transition(0.3s width ease-in, 0.3s height ease-in, 0.3s margin ease-in);
 
-        &:hover {
-            border: 8px solid $purple;
-            opacity: 1;
-            // @include transform( translateY(-20px) );
-        }
-
         &.active {
-            margin-top: -40px;
+            opacity: 1;
+            border: 8px solid $purple;
+            margin-top: -20px;
             height: 16vw;
             width: 16vw;
             // transition: width .3s;
@@ -29,6 +24,7 @@
             background-size: cover;
             width: 12vw;
         }
+
     }
 
     .info-content {
@@ -36,11 +32,12 @@
     }
 
     .proj-link {
+        font-family: 'Raleway', sans-serif;
         display: block;
         cursor: pointer;
         margin-top: 20px;
         font-weight: bold;
-        color: purple;
+        color: $purple;
     }
 
 }

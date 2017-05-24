@@ -22,6 +22,8 @@ $blue: #52658f;
 $cream: #f7f5e6;
 $gray: #e8e8e8;
 $white: #fafafa;
+$font-size-normal: 0.9vw;
+$font-size-large: 1.2vw;
 
 @import 'components/*';
 // @import 'components/header';
@@ -34,13 +36,12 @@ $white: #fafafa;
 
 html, body {
     background-color: $purple;
-    font-size: 0.9vw;
+    font-size: $font-size-normal;
     font-family: 'Julius Sans One', sans-serif;
-    // background-color: transparent;
 }
 
 .large {
-    font-size: 1.2vw;
+    font-size: $font-size-large;
 }
 
 a, a:visited {

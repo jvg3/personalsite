@@ -23,6 +23,7 @@
     }
 
     .info-card {
+        @include transition(all 0.3s ease-in);
         min-height: 35vh;
         max-height: 80vh;
     }
@@ -40,6 +41,7 @@
     .tech-icons {
 
         margin-bottom: 20px;
+        min-height: 80px;
 
         .tech-wrap {
 
@@ -52,6 +54,10 @@
                 width: 80px;
             }
         }
+    }
+
+    .tech-content {
+        min-height: $font-size-normal;
     }
 
 }

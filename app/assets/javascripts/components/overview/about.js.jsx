@@ -13,8 +13,8 @@ Overview.About = class About extends React.Component {
         var asset_paths = this.props.asset_paths
 
         return (
-            <div className="about section fx-col fx-hc">
-                <div className="header">IAmA</div>
+            <div className="about section fx-col fx-hc fx-vsa">
+                <div className="header">About</div>
                 <div className="info-card fx-1 fx-col">
                     <div className="info-header">About</div>
                     <div className="info-content fx-row fx-hsa fx-vc fx-1">
@@ -35,7 +35,7 @@ Overview.About = class About extends React.Component {
                                 building a variety of web and mobile apps.
                                 <br/>
                                 <br/>
-                                Ruby (on Rails) and Javascript are my core, but I am adaptable (and eager!) to work with
+                                Ruby (on Rails) and Javascript are my core, but I am adaptable - and eager - to work with
                                 new technologies and frameworks.
                             </div>
                         </div>
