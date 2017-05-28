@@ -48,7 +48,7 @@ Overview.Home = class Home extends React.Component {
                                 ) }
                             </div>
                         </div>
-                        <div className="large fx-1">{this.contentForItem(item)}</div>
+                        <div className="info-text tech-content large fx-1">{this.contentForItem(item)}</div>
                     </div>
                 </div>
                 <div className="fa fa-angle-down"></div>

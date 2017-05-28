@@ -12,7 +12,8 @@ Overview.Projects = class Projects extends React.Component {
         var asset_paths = this.props.asset_paths
         var selected_proj = this.state.selected_proj || {}
         return (
-            <div className="projects fx-col fx-expand fx-hc fx-vc">
+            <div className="projects fx-col fx-vsa fx-expand fx-hc fx-vc">
+                <div className="header">Notable Projects</div>
                 <div className=" fx-row fx-expand-w fx-hsa fx-vc">
                     { ['tipyourself', 'scion', 'scapegoat'].map( (proj, i) =>
                         <div
@@ -29,25 +30,27 @@ Overview.Projects = class Projects extends React.Component {
         )
     }
 
+
     infoCard() {
 
         var selected_proj = this.state.selected_proj
 
-        if (selected_proj) {
-            return (
-                <div className="info-card animated fadeIn">
-                    <div className="info-header fx-row fx-hsb">
-                        <div>{selected_proj.name}</div>
-                        <div
-                            className="info-close"
-                            onClick={() => this.setState({ selected_proj: null })}>
-                            X
-                        </div>
+        return (
+            <div className={"info-card " + (selected_proj || "closed")}>
+                <div className="info-header fx-row fx-hsb">
+                    <div>{selected_proj ? selected_proj.name : ""}</div>
+                    <div
+                        className="info-close"
+                        onClick={() => this.setState({ selected_proj: null })}>
+                        X
                     </div>
-                    <div className="info-content">{selected_proj.info}</div>
                 </div>
-            )
-        }
+                <div className="info-content">
+                    <div className="info-text">{selected_proj ? selected_proj.info : ""}</div>
+                </div>
+            </div>
+        )
+
     }
 
     setProj(proj) { this.setState( { selected_proj: eval("this." + proj + "()") } ) }
