@@ -73,7 +73,7 @@ Overview.Home = class Home extends React.Component {
 
         switch(item) {
             case 'cloud': return 'Experience configuring and deploying and heroku instances from scratch. Have worked with dynamic AWS S3 storage and EC2 computing.'
-            case 'database': return 'Experience with both sql (Postgresql) and Nosql (MongoDB) setup, queries, restoration, migration, etc'
+            case 'database': return 'Experience with both SQL (PostgreSQL) and NoSQL (MongoDB) setup, queries, restoration, migration, etc'
             case 'server': return 'Development of backend systems for web apps and JSON APIs to communicate with mobile apps, primarily in Ruby on Rails.'
             case 'desktop': return 'Strong Javascript skills, particularly in React. Familiar with HTML, CSS, ECMAScript 6 syntax and animations.'
             case 'mobile': return 'Swift and Java (XCode and Android Studio) native mobile app development '
